@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sollecito Advantage Group | 3133 Tiger Tail Road — Conway, SC</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --navy-deep: #08091b;
+  --navy: #131643;
+  --navy-mid: #1a1d52;
+  --blue: #1581e2;
+  --blue-mid: #5057cd;
+  --blue-light: #7b81da;
+  --gold: #c9a96e;
+  --gold-light: #ddc595;
+  --gold-muted: rgba(201,169,110,0.15);
+  --grey-dark: #2a2d5a;
+  --grey: #7b7fa0;
+  --grey-light: #a0a3be;
+  --silver: #c5c8de;
+  --off-white: #e8e9f2;
+  --white: #f5f5f8;
+  --pure-white: #fff;
+  --serif: 'Cormorant Garamond', Georgia, serif;
+  --sans: 'Montserrat', 'Helvetica Neue', sans-serif;
+}
+
+html { scroll-behavior: smooth; font-size: 16px; }
+body { font-family: var(--sans); background: var(--navy-deep); color: var(--off-white); line-height: 1.7; -webkit-font-smoothing: antialiased; }
+
+/* ── Utility ── */
+.container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
+.section-label { font-family: var(--sans); font-size: 0.7rem; letter-spacing: 0.35em; text-transform: uppercase; color: var(--gold); margin-bottom: 1rem; }
+.section-title { font-family: var(--serif); font-size: clamp(2.2rem, 5vw, 3.6rem); font-weight: 300; line-height: 1.15; color: var(--pure-white); margin-bottom: 1.5rem; }
+.divider { width: 60px; height: 1px; background: var(--gold); margin: 2rem 0; }
+.divider-center { margin-left: auto; margin-right: auto; }
+
+/* ── Navigation ── */
+nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  background: rgba(8,9,27,0.92); backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(201,169,110,0.1);
+  transition: background 0.4s;
+}
+nav .nav-inner {
+  max-width: 1200px; margin: 0 auto; padding: 0 2rem;
+  display: flex; align-items: center; justify-content: space-between;
+  height: 72px;
+}
+nav .logo { display: flex; align-items: center; gap: 0.8rem; text-decoration: none; }
+nav .logo .logo-text { display: flex; flex-direction: column; }
+nav .logo .logo-name { font-family: var(--serif); font-size: 1.1rem; font-weight: 400; color: var(--gold); letter-spacing: 0.15em; text-transform: uppercase; line-height: 1.2; }
+nav .logo .logo-sub { font-weight: 300; color: var(--grey-light); font-size: 0.55rem; font-family: var(--sans); letter-spacing: 0.3em; text-transform: uppercase; }
+
+nav ul { list-style: none; display: flex; gap: 2.5rem; }
+nav ul li a {
+  font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase;
+  color: var(--silver); text-decoration: none; transition: color 0.3s;
+  font-weight: 500;
+}
+nav ul li a:hover { color: var(--gold); }
+.nav-cta {
+  padding: 0.55rem 1.6rem; border: 1px solid var(--gold);
+  font-size: 0.68rem; letter-spacing: 0.2em; text-transform: uppercase;
+  color: var(--gold); text-decoration: none; transition: all 0.3s;
+  font-weight: 500;
+}
+.nav-cta:hover { background: var(--gold); color: var(--navy-deep); }
+
+
+/* ── Hero ── */
+.hero {
+  min-height: 100vh; display: flex; align-items: center; justify-content: center;
+  position: relative; overflow: hidden;
+  background: var(--navy-deep);
+}
+.hero-bg {
+  position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;
+  opacity: 0.4;
+}
+.hero::before {
+  content: ''; position: absolute; inset: 0; z-index: 1;
+  background: linear-gradient(180deg, rgba(8,9,27,0.5) 0%, rgba(8,9,27,0.2) 40%, rgba(8,9,27,0.7) 100%);
+}
+.hero-content { position: relative; z-index: 2; text-align: center; padding: 2rem; }
+
+.hero-brand-mark { margin-bottom: 2.5rem; }
+.hero-brand-mark .brand-name {
+  font-family: var(--serif); font-size: clamp(1.2rem, 2.5vw, 1.6rem);
+  font-weight: 400; color: var(--gold); letter-spacing: 0.25em;
+  text-transform: uppercase; margin-bottom: 0.3rem;
+}
+.hero-brand-mark .brand-sub {
+  font-size: 0.6rem; letter-spacing: 0.35em; text-transform: uppercase;
+  color: var(--grey-light); font-weight: 300;
+}
+
+.hero-eyebrow {
+  display: inline-block; background: var(--gold-muted);
+  border: 1px solid rgba(201,169,110,0.25);
+  color: var(--gold); font-size: 0.65rem; font-weight: 600;
+  letter-spacing: 0.25em; text-transform: uppercase;
+  padding: 0.5rem 1.5rem; border-radius: 2px; margin-bottom: 2rem;
+}
+.hero-title {
+  font-family: var(--serif); font-size: clamp(3rem, 8vw, 6.5rem);
+  font-weight: 300; line-height: 1.05; color: var(--pure-white); margin-bottom: 1rem;
+}
+.hero-title em { font-style: italic; font-weight: 300; }
+.hero-subtitle {
+  font-family: var(--sans); font-size: 0.85rem; letter-spacing: 0.25em;
+  text-transform: uppercase; color: var(--grey-light); margin-bottom: 2.5rem; font-weight: 300;
+}
+
+.hero-stats { display: flex; justify-content: center; gap: 3rem; flex-wrap: wrap; margin-bottom: 2.5rem; }
+.hero-stat { text-align: center; }
+.hero-stat .value { font-family: var(--serif); font-size: 2rem; font-weight: 400; color: var(--pure-white); }
+.hero-stat .label { font-size: 0.6rem; letter-spacing: 0.25em; text-transform: uppercase; color: var(--grey); margin-top: 0.25rem; font-weight: 500; }
+
+.hero-price { font-family: var(--serif); font-size: clamp(2rem, 4vw, 3rem); font-weight: 400; color: var(--gold); margin-bottom: 2.5rem; }
+
+.hero-line { width: 1px; height: 80px; background: linear-gradient(to bottom, var(--gold), transparent); margin: 0 auto; }
+.hero-scroll { margin-top: 1.5rem; font-size: 0.65rem; letter-spacing: 0.3em; text-transform: uppercase; color: var(--grey); animation: pulse 2s infinite; }
+@keyframes pulse { 0%,100% { opacity: 0.4; } 50% { opacity: 1; } }
+
+/* ── Photo Slideshow ── */
+.slideshow-section {
+  position: relative; overflow: hidden;
+  border-top: 1px solid rgba(201,169,110,0.08);
+  border-bottom: 1px solid rgba(201,169,110,0.08);
+}
+.slideshow-header {
+  text-align: center; padding: 4rem 2rem 2rem;
+  background: var(--navy-deep);
+}
+.slideshow-wrapper {
+  position: relative; width: 100%; max-width: 1200px; margin: 0 auto;
+  aspect-ratio: 16/9; overflow: hidden; background: var(--navy);
+}
+.slide {
+  position: absolute; inset: 0; opacity: 0; transition: opacity 0.8s ease;
+}
+.slide.active { opacity: 1; }
+.slide img { width: 100%; height: 100%; object-fit: cover; }
+
+.slideshow-controls {
+  position: absolute; bottom: 1.5rem; left: 50%; transform: translateX(-50%);
+  z-index: 10; display: flex; gap: 0.5rem; align-items: center;
+}
+.slide-btn {
+  background: rgba(8,9,27,0.7); border: 1px solid rgba(201,169,110,0.3);
+  color: var(--gold); width: 44px; height: 44px; cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.2rem; transition: all 0.3s; backdrop-filter: blur(10px);
+  -webkit-tap-highlight-color: transparent;
+}
+.slide-btn:hover { background: var(--gold); color: var(--navy-deep); }
+.slide-counter {
+  font-family: var(--sans); font-size: 0.7rem; letter-spacing: 0.15em;
+  color: var(--pure-white); background: rgba(8,9,27,0.7);
+  padding: 0.4rem 1rem; backdrop-filter: blur(10px);
+  border: 1px solid rgba(201,169,110,0.2);
+}
+
+.thumbnail-strip {
+  display: flex; gap: 2px; overflow-x: auto; padding: 2px 0;
+  max-width: 1200px; margin: 0 auto;
+  scrollbar-width: thin; scrollbar-color: var(--gold) var(--navy);
+  -webkit-overflow-scrolling: touch; scroll-snap-type: x proximity;
+}
+.thumbnail-strip::-webkit-scrollbar { height: 4px; }
+.thumbnail-strip::-webkit-scrollbar-track { background: var(--navy); }
+.thumbnail-strip::-webkit-scrollbar-thumb { background: var(--gold); }
+.thumbnail {
+  flex-shrink: 0; width: 100px; height: 65px; cursor: pointer;
+  opacity: 0.4; transition: opacity 0.3s; overflow: hidden;
+  border: 2px solid transparent; scroll-snap-align: center;
+}
+.thumbnail.active { opacity: 1; border-color: var(--gold); }
+.thumbnail:hover { opacity: 0.8; }
+.thumbnail img { width: 100%; height: 100%; object-fit: cover; }
+
+/* ── Intro / About the Property ── */
+.intro { padding: 8rem 0; }
+.intro-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center; }
+.intro-image {
+  aspect-ratio: 3/4; position: relative; overflow: hidden;
+}
+.intro-image img { width: 100%; height: 100%; object-fit: cover; }
+.intro-image::after {
+  content: 'WHITE OAK ESTATES'; position: absolute; bottom: 2rem; left: 2rem;
+  font-family: var(--serif); font-size: 1.1rem; color: rgba(255,255,255,0.5);
+  letter-spacing: 0.1em;
+}
+
+.intro-text p { color: var(--silver); font-size: 0.95rem; line-height: 1.9; margin-bottom: 1.5rem; font-weight: 300; }
+.intro-text .credentials {
+  margin-top: 2rem; padding-top: 2rem; border-top: 1px solid rgba(201,169,110,0.12);
+}
+.intro-text .credentials span {
+  display: inline-block; font-size: 0.68rem; letter-spacing: 0.2em;
+  text-transform: uppercase; color: var(--gold); margin-right: 2rem;
+  font-weight: 500;
+}
+
+/* ── Property Feature Cards ── */
+.features-section { padding: 6rem 0 0; }
+.features-header { text-align: center; margin-bottom: 5rem; }
+.features-header p { max-width: 600px; margin: 0 auto; color: var(--grey-light); font-size: 0.9rem; font-weight: 300; }
+
+.feature-card {
+  display: grid; grid-template-columns: 1fr 1fr; min-height: 500px;
+  border-top: 1px solid rgba(201,169,110,0.08);
+}
+.feature-card:nth-child(even) { direction: rtl; }
+.feature-card:nth-child(even) > * { direction: ltr; }
+
+.feature-image {
+  position: relative; overflow: hidden; background: var(--navy);
+}
+.feature-image img { width: 100%; height: 100%; object-fit: cover; }
+
+.feature-content {
+  padding: 4rem 3.5rem; display: flex; flex-direction: column; justify-content: center;
+}
+.feature-content .feature-name {
+  font-family: var(--serif); font-size: clamp(1.8rem, 3vw, 2.6rem);
+  font-weight: 300; color: var(--pure-white); margin-bottom: 0.5rem; line-height: 1.2;
+}
+.feature-content .feature-type {
+  font-size: 0.68rem; letter-spacing: 0.3em; text-transform: uppercase;
+  color: var(--gold); margin-bottom: 2rem; font-weight: 500;
+}
+.feature-content p { color: var(--silver); font-size: 0.9rem; line-height: 1.9; margin-bottom: 1.5rem; font-weight: 300; }
+
+.feature-details {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;
+  margin-top: 2rem; padding-top: 2rem;
+  border-top: 1px solid rgba(201,169,110,0.08);
+}
+.detail-item .detail-label {
+  font-size: 0.62rem; letter-spacing: 0.25em; text-transform: uppercase;
+  color: var(--grey); margin-bottom: 0.3rem; font-weight: 500;
+}
+.detail-item .detail-value {
+  font-family: var(--serif); font-size: 1.15rem; color: var(--off-white); font-weight: 400;
+}
+
+/* ── Stats ── */
+.stats {
+  padding: 6rem 0;
+  border-top: 1px solid rgba(201,169,110,0.08);
+  border-bottom: 1px solid rgba(201,169,110,0.08);
+  margin: 4rem 0;
+}
+.stats-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; text-align: center;
+}
+.stat-number {
+  font-family: var(--serif); font-size: clamp(2.5rem, 4vw, 3.5rem);
+  font-weight: 300; color: var(--gold); line-height: 1;
+}
+.stat-label {
+  font-size: 0.65rem; letter-spacing: 0.25em; text-transform: uppercase;
+  color: var(--grey); margin-top: 0.75rem; font-weight: 500;
+}
+
+/* ── Conway Section Cards ── */
+.conway-section { padding: 6rem 0 0; }
+.conway-header { text-align: center; margin-bottom: 5rem; }
+.conway-header p { max-width: 600px; margin: 0 auto; color: var(--grey-light); font-size: 0.9rem; font-weight: 300; }
+
+.conway-card {
+  display: grid; grid-template-columns: 1fr 1fr; min-height: 500px;
+  border-top: 1px solid rgba(201,169,110,0.08);
+}
+.conway-card:nth-child(even) { direction: rtl; }
+.conway-card:nth-child(even) > * { direction: ltr; }
+
+.conway-image {
+  position: relative; overflow: hidden; background: var(--navy);
+}
+.conway-image img { width: 100%; height: 100%; object-fit: cover; }
+
+.conway-content {
+  padding: 4rem 3.5rem; display: flex; flex-direction: column; justify-content: center;
+}
+.conway-content .conway-name {
+  font-family: var(--serif); font-size: clamp(1.8rem, 3vw, 2.6rem);
+  font-weight: 300; color: var(--pure-white); margin-bottom: 0.5rem; line-height: 1.2;
+}
+.conway-content .conway-type {
+  font-size: 0.68rem; letter-spacing: 0.3em; text-transform: uppercase;
+  color: var(--gold); margin-bottom: 2rem; font-weight: 500;
+}
+.conway-content p { color: var(--silver); font-size: 0.9rem; line-height: 1.9; margin-bottom: 1.5rem; font-weight: 300; }
+
+.conway-details {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;
+  margin-top: 2rem; padding-top: 2rem;
+  border-top: 1px solid rgba(201,169,110,0.08);
+}
+
+.conway-cta {
+  display: inline-block; margin-top: 2.5rem;
+  padding: 0.7rem 2rem; border: 1px solid var(--gold);
+  font-size: 0.65rem; letter-spacing: 0.25em; text-transform: uppercase;
+  color: var(--gold); text-decoration: none; transition: all 0.3s;
+  font-weight: 500;
+}
+.conway-cta:hover { background: var(--gold); color: var(--navy-deep); }
+
+/* ── Testimonial ── */
+.testimonial {
+  padding: 8rem 0; text-align: center;
+  background: linear-gradient(180deg, var(--navy-deep), var(--navy), var(--navy-deep));
+}
+.testimonial blockquote {
+  font-family: var(--serif); font-size: clamp(1.4rem, 3vw, 2.2rem);
+  font-weight: 300; font-style: italic; color: var(--off-white);
+  max-width: 800px; margin: 0 auto 2rem; line-height: 1.6;
+}
+.testimonial cite {
+  font-family: var(--sans); font-size: 0.72rem; letter-spacing: 0.2em;
+  text-transform: uppercase; color: var(--gold); font-style: normal; font-weight: 500;
+}
+
+/* ── Contact ── */
+.contact { padding: 8rem 0; }
+.contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; }
+.contact-info p { color: var(--silver); font-size: 0.9rem; line-height: 1.9; margin-bottom: 2rem; font-weight: 300; }
+.contact-detail {
+  padding: 1.2rem 0;
+  border-bottom: 1px solid rgba(201,169,110,0.08);
+}
+.contact-detail .contact-label {
+  font-size: 0.62rem; letter-spacing: 0.25em; text-transform: uppercase;
+  color: var(--grey); margin-bottom: 0.3rem; font-weight: 500;
+}
+.contact-detail .contact-value {
+  font-family: var(--serif); font-size: 1.1rem; color: var(--off-white);
+}
+.contact-detail a { color: var(--gold-light); text-decoration: none; transition: color 0.3s; }
+.contact-detail a:hover { color: var(--gold); }
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%; padding: 1rem 0; background: transparent; border: none;
+  border-bottom: 1px solid rgba(201,169,110,0.15);
+  color: var(--off-white); font-family: var(--sans); font-size: 0.85rem;
+  margin-bottom: 1.5rem; outline: none; transition: border-color 0.3s; font-weight: 300;
+}
+.contact-form input::placeholder,
+.contact-form textarea::placeholder { color: var(--grey); font-weight: 300; }
+.contact-form input:focus,
+.contact-form textarea:focus { border-bottom-color: var(--gold); }
+.contact-form textarea { resize: vertical; min-height: 120px; }
+.contact-form button {
+  padding: 0.9rem 3rem; border: 1px solid var(--gold);
+  background: transparent; color: var(--gold); cursor: pointer;
+  font-family: var(--sans); font-size: 0.68rem; letter-spacing: 0.25em;
+  text-transform: uppercase; transition: all 0.3s; font-weight: 500; margin-top: 1rem;
+}
+.contact-form button:hover { background: var(--gold); color: var(--navy-deep); }
+
+/* ── Footer ── */
+footer {
+  padding: 3rem 0; text-align: center;
+  border-top: 1px solid rgba(201,169,110,0.08);
+}
+footer .footer-brand {
+  font-family: var(--serif); font-size: 1.2rem; color: var(--gold); margin-bottom: 0.5rem;
+  letter-spacing: 0.15em; text-transform: uppercase;
+}
+footer .footer-brokerage {
+  font-size: 0.68rem; letter-spacing: 0.15em; text-transform: uppercase;
+  color: var(--grey); margin-bottom: 1.5rem; font-weight: 400;
+}
+footer .footer-legal {
+  font-size: 0.7rem; color: var(--grey); line-height: 1.8; max-width: 700px; margin: 0 auto;
+}
+footer .footer-website { margin-top: 1rem; }
+footer .footer-website a {
+  color: var(--blue); text-decoration: none; font-size: 0.8rem; letter-spacing: 0.1em;
+  transition: color 0.3s;
+}
+footer .footer-website a:hover { color: var(--blue-light); }
+
+/* ── Responsive ── */
+@media (max-width: 900px) {
+  nav ul { display: none; }
+  nav .nav-inner { padding: 0 1rem; height: 60px; }
+  nav .logo img { height: 38px !important; max-width: 180px; object-fit: contain; }
+  .nav-cta { padding: 0.4rem 1rem; font-size: 0.6rem; letter-spacing: 0.15em; white-space: nowrap; }
+  .intro-grid { grid-template-columns: 1fr; gap: 3rem; }
+  .feature-card, .feature-card:nth-child(even) { grid-template-columns: 1fr; direction: ltr; }
+  .feature-card:nth-child(even) > * { direction: ltr; }
+  .feature-image { min-height: 300px; }
+  .feature-content { padding: 3rem 2rem; }
+  .conway-card, .conway-card:nth-child(even) { grid-template-columns: 1fr; direction: ltr; }
+  .conway-card:nth-child(even) > * { direction: ltr; }
+  .conway-image { min-height: 300px; }
+  .conway-content { padding: 3rem 2rem; }
+  .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 3rem; }
+  .contact-grid { grid-template-columns: 1fr; gap: 3rem; }
+  .hero-stats { gap: 1.5rem; }
+  .slideshow-wrapper { aspect-ratio: 4/3; }
+  .thumbnail { width: 70px; height: 46px; }
+}
+@media (max-width: 600px) {
+  .feature-details, .conway-details { grid-template-columns: 1fr; }
+  .stats-grid { grid-template-columns: 1fr; gap: 2rem; }
+  .hero-title { font-size: 2.5rem; }
+  .hero-stats { gap: 1rem; }
+  .hero-stat .value { font-size: 1.5rem; }
+  .hero-price { font-size: 1.8rem; }
+  .hero-eyebrow { font-size: 0.58rem; padding: 0.4rem 1rem; }
+  .hero-subtitle { font-size: 0.75rem; letter-spacing: 0.15em; }
+  .section-title { font-size: 1.8rem; }
+  .container { padding: 0 1.2rem; }
+  .intro { padding: 4rem 0; }
+  .contact { padding: 4rem 0; }
+  .testimonial { padding: 4rem 0; }
+  .testimonial blockquote { font-size: 1.2rem; }
+  .contact-form button { width: 100%; }
+}
+
+@media (max-width: 400px) {
+  .hero-title { font-size: 2rem; }
+  .hero-stats { flex-direction: column; gap: 0.75rem; }
+  .hero-stat { display: flex; align-items: center; gap: 0.5rem; }
+  .hero-stat .value { font-size: 1.3rem; }
+  .hero-stat .label { margin-top: 0; }
+  .hero-price { font-size: 1.5rem; }
+  .hero-brand-mark .brand-name { font-size: 0.9rem; letter-spacing: 0.15em; }
+  .hero-brand-mark .brand-sub { font-size: 0.5rem; }
+  .feature-content { padding: 2rem 1.2rem; }
+  .conway-content { padding: 2rem 1.2rem; }
+  .slideshow-wrapper { aspect-ratio: 3/2; }
+  .slide-btn { width: 34px; height: 34px; font-size: 1rem; }
+  .slide-counter { font-size: 0.6rem; padding: 0.3rem 0.7rem; }
+}
+</style>
+</head>
+<body>
+
+<!-- ── Navigation ── -->
+<nav>
+  <div class="nav-inner">
+    <a href="#" class="logo">
+      <img src="https://bt-wpstatic.freetls.fastly.net/wp-content/blogs.dir/6885/files/2021/01/inner-retina.png" alt="Sollecito Advantage Group - Coldwell Banker Sea Coast Advantage" style="height: 50px; width: auto;">
+    </a>
+    
+    <a href="https://www.mbadvantagegroup.com/contactus/" target="_blank" class="nav-cta">Schedule a Showing</a>
+  </div>
+</nav>
+
+<!-- ── Hero ── -->
+<section class="hero">
+  <img class="hero-bg" src="https://dlqxt4mfnxo6k.cloudfront.net/greatsouthernhomes.com/aHR0cHM6Ly9zMy5hbWF6b25hd3MuY29tL2J1aWxkZXJjbG91ZC8xNjAxY2E5OTE1NDVjN2FjMTJjMDI3NTdiNzFjYTMxZS5qcGVn/exact/webp/2000/1125" alt="3133 Tiger Tail Road — White Oak Estates">
+  <div class="hero-content">
+    <div class="hero-brand-mark">
+      <div class="brand-name">Sollecito Advantage Group</div>
+      <div class="brand-sub">Coldwell Banker Sea Coast Advantage</div>
+    </div>
+    <div class="hero-eyebrow">New Construction &bull; White Oak Estates</div>
+    <h1 class="hero-title">3133 Tiger Tail<br><em>Road</em></h1>
+    <p class="hero-subtitle">Conway, South Carolina 29526</p>
+    <div class="hero-stats">
+      <div class="hero-stat">
+        <div class="value">2</div>
+        <div class="label">Bedrooms</div>
+      </div>
+      <div class="hero-stat">
+        <div class="value">2</div>
+        <div class="label">Bathrooms</div>
+      </div>
+      <div class="hero-stat">
+        <div class="value">1,173</div>
+        <div class="label">Sq Ft</div>
+      </div>
+      <div class="hero-stat">
+        <div class="value">1</div>
+        <div class="label">Car Garage</div>
+      </div>
+    </div>
+    <div class="hero-price">$249,990</div>
+    <div class="hero-line"></div>
+    <p class="hero-scroll">Scroll to Explore</p>
+  </div>
+</section>
+
+<!-- ── Photo Gallery / Slideshow ── -->
+<section class="slideshow-section" id="gallery">
+  <div class="slideshow-header">
+    <p class="section-label">Property Gallery</p>
+    <h2 class="section-title">Step Inside</h2>
+  </div>
+  <div class="slideshow-wrapper">
+    <!-- Slides -->
+    <div class="slide active" data-index="0"><img src="https://dlqxt4mfnxo6k.cloudfront.net/greatsouthernhomes.com/aHR0cHM6Ly9zMy5hbWF6b25hd3MuY29tL2J1aWxkZXJjbG91ZC8xNjAxY2E5OTE1NDVjN2FjMTJjMDI3NTdiNzFjYTMxZS5qcGVn/exact/webp/2000/1125" alt="Front Exterior"></div>
+    <div class="slide" data-index="1"><img src="https://dlqxt4mfnxo6k.cloudfront.net/greatsouthernhomes.com/aHR0cHM6Ly9zMy5hbWF6b25hd3MuY29tL2J1aWxkZXJjbG91ZC9hYWZjZGE0MzI2OGNmODM1YzRiZmUwYWYzYTg2MTU4NS5qcGVn/exact/webp/2000/1125" alt="Front Exterior Angle 2"></div>
+    <div class="slide" data-index="2"><img src="https://dlqxt4mfnxo6k.cloudfront.net/greatsouthernhomes.com/aHR0cHM6Ly9zMy5hbWF6b25hd3MuY29tL2J1aWxkZXJjbG91ZC9hN2Y4OTZmNTA0M2EwNmIxZGMxNThlMGUyMjJiMTk1ZS5qcGVn/exact/webp/2000/1125" alt="Front Exterior Angle 3"></div>
+    <div class="slide" data-index="3"><img src="https://dlqxt4mfnxo6k.cloudfront.net/greatsouthernhomes.com/aHR0cHM6Ly9zMy5hbWF6b25hd3MuY29tL2J1aWxkZXJjbG91ZC83ZTAwN2QyZDUxYTg2ODVjOWRlZjNhMGI1YmNmOWExMC5qcGVn/exact/webp/2000/1125" alt="Front Entrance"></div>
+    <div class="slide" data-index="4"><img src="https://dlqxt4mfnxo6k.cloudfront.net/greatsouthernhomes.com/aHR0cHM6Ly9zMy5hbWF6b25hd3MuY29tL2J1aWxkZXJjbG91ZC85Yjc3NGIzMDY3M2YyMTAyMDg0OTkxYjM1ZDE5ODgyYi5qcGVn/exact/webp/2000/1125" alt="Kitchen 1"></div>
+    <div class="slide" data-index="5"><img src="https://dlqxt4mfnxo6k.cloudfront.net/greatsouthernhomes.com/aHR0cHM6Ly9zMy5hbWF6b25hd3MuY29tL2J1aWxkZXJjbG91ZC9hZWVkOTMwMzgwZDdmYjJkYTI4NjNiMTQwYmI3NmRjOS5qcGVn/exact/webp/2000/1125" alt="Kitchen 2"></div>
+    <div class="slide" data-index="6"><img src="https://dlqxt4mfnxo6k.cloudfront.net/greatsouthernhomes.com/aHR0cHM6Ly9zMy5hbWF6b25hd3MuY29tL2J1aWxkZXJjbG91ZC9mMjFmYjA4MjE1ZjBiNjA2MTEwNWJhZWJmM2UyNmM5NC5qcGVn/exact/webp/2000/1125" alt="Kitchen 3"></div>
+    <div class="slide" data-index="7"><img src="https://dlqxt4mfnxo6k.cloudfront.net/greatsouthernhomes.com/aHR0cHM6Ly9zMy5hbWF6b25hd3MuY29tL2J1aWxkZXJjbG91ZC9lN2U1YzYxYzBlMjI1NDdmNzM3MDM1N2U2MDA3NzliOS5qcGVn/exact/webp/2000/1125" alt="Great Room 1"></div>
+    <div class="slide" data-index="8"><img src="https://dlqxt4mfnxo6k.cloudfront.net/greatsouthernhomes.com/aHR0cHM6Ly9zMy5hbWF6b25hd3MuY29tL2J1aWxkZXJjbG91ZC80ZDY4MzdiYjdkNTE5NDJmNjljNTI4OTk2YzU1Yzc3Ny5qcGVn/exact/webp/2000/1125" alt="Great Room 2"></div>
+    <div class="slide" data-index="9"><img src="https://dlqxt4mfnxo6k.cloudfront.net/greatsouthernhomes.com/aHR0cHM6Ly9zMy5hbWF6b25hd3MuY29tL2J1aWxkZXJjbG91ZC81YTdkNGRiNDA2OTRhYzdmMDVkZjJiNmY0MmMzOTZmMi5qcGVn/exact/webp/2000/1125" alt="Kitchen 4"></div>
+    <div class="slide" data-index="10"><img src="https://dlqxt4mfnxo6k.cloudfront.net/greatsouthernhomes.com/aHR0cHM6Ly9zMy5hbWF6b25hd3MuY29tL2J1aWxkZXJjbG91ZC80Y2NiOWQ3OThmYzVlMDE4MTU2MGFlYWQ0ZTk2MzhlOS5qcGVn/exact/webp/2000/1125" alt="Primary Suite 1"></div>
+    <div class="slide" data-index="11"><img src="https://dlqxt4mfnxo6k.cloudfront.net/greatsouthernhomes.com/aHR0cHM6Ly9zMy5hbWF6b25hd3MuY29tL2J1aWxkZXJjbG91ZC9hOWJjZjY1N2ViM2QyZDM1MzY4NGRlODM0YjIyOWUyMS5qcGVn/exact/webp/2000/1125" alt="Primary Suite 2"></div>
+    <div class="slide" data-index="12"><img src="https://dlqxt4mfnxo6k.cloudfront.net/greatsouthernhomes.com/aHR0cHM6Ly9zMy5hbWF6b25hd3MuY29tL2J1aWxkZXJjbG91ZC9mYjQ3NjdiNTAxNjJkZDAzZGVkNzk1ZWM2OGE3NjhjZC5qcGVn/exact/webp/2000/1125" alt="Primary Bathroom 1"></div>
+    <div class="slide" data-index="13"><img src="https://dlqxt4mfnxo6k.cloudfront.net/greatsouthernhomes.com/aHR0cHM6Ly9zMy5hbWF6b25hd3MuY29tL2J1aWxkZXJjbG91ZC9iMGFiMmJlNjNlMmExMDI1NDU3YzQ0ODM3NjZhZmViMi5qcGVn/exact/webp/2000/1125" alt="Primary Bathroom 2"></div>
+    <div class="slide" data-index="14"><img src="https://dlqxt4mfnxo6k.cloudfront.net/greatsouthernhomes.com/aHR0cHM6Ly9zMy5hbWF6b25hd3MuY29tL2J1aWxkZXJjbG91ZC85ZDQyMzRmYzEzNmU0N2RhNmE2NGQzY2MxMWZmMDg0MC5qcGVn/exact/webp/2000/1125" alt="Walk-In Closet"></div>
+    <div class="slide" data-index="15"><img src="https://dlqxt4mfnxo6k.cloudfront.net/greatsouthernhomes.com/aHR0cHM6Ly9zMy5hbWF6b25hd3MuY29tL2J1aWxkZXJjbG91ZC84YjZhYjM1OTZhMmNlNTZmMjA5M2RhMGFlNDg5ZjkzMS5qcGVn/exact/webp/2000/1125" alt="Bedroom 2"></div>
+    <div class="slide" data-index="16"><img src="https://dlqxt4mfnxo6k.cloudfront.net/greatsouthernhomes.com/aHR0cHM6Ly9zMy5hbWF6b25hd3MuY29tL2J1aWxkZXJjbG91ZC85NDIxODYzOTA0NDU5YjVlOWIzMDA4MTc2ZDhmNmQ4Yy5qcGVn/exact/webp/2000/1125" alt="Bathroom 2"></div>
+    <div class="slide" data-index="17"><img src="https://dlqxt4mfnxo6k.cloudfront.net/greatsouthernhomes.com/aHR0cHM6Ly9zMy5hbWF6b25hd3MuY29tL2J1aWxkZXJjbG91ZC83NDA3MGRkNWE5ZWNkM2IwZjU2NDc4MDNkNGE5ZWQyNy5qcGVn/exact/webp/2000/1125" alt="Rear Exterior 1"></div>
+    <div class="slide" data-index="18"><img src="https://dlqxt4mfnxo6k.cloudfront.net/greatsouthernhomes.com/aHR0cHM6Ly9zMy5hbWF6b25hd3MuY29tL2J1aWxkZXJjbG91ZC84NTM0MDQxM2MwMjg2YzVkY2UwYzk2MWJkMWNiNjkzZC5qcGVn/exact/webp/2000/1125" alt="Rear Exterior 2"></div>
+    <div class="slide" data-index="19"><img src="https://dlqxt4mfnxo6k.cloudfront.net/greatsouthernhomes.com/aHR0cHM6Ly9zMy5hbWF6b25hd3MuY29tL2J1aWxkZXJjbG91ZC9jMTE4OTYzNDM1YzZkMzAyMGM0NGFkOWQ1MzA3Njg2Mi5qcGVn/exact/webp/2000/1125" alt="Rear Exterior 3"></div>
+    <div class="slide" data-index="20"><img src="https://dlqxt4mfnxo6k.cloudfront.net/greatsouthernhomes.com/aHR0cHM6Ly9zMy5hbWF6b25hd3MuY29tL2J1aWxkZXJjbG91ZC82OTFmOTQ2NTM0ZjcxNjQyOGM3YTk0ZmI3MmEwMGNmNC5qcGVn/exact/webp/2000/1125" alt="Mudroom"></div>
+    <div class="slide" data-index="21"><img src="https://dlqxt4mfnxo6k.cloudfront.net/greatsouthernhomes.com/aHR0cHM6Ly9zMy5hbWF6b25hd3MuY29tL2J1aWxkZXJjbG91ZC85MmM4ZjlmZDkxYTc5YWE3YzY0NGU1MGM1N2U4ZDFlNS5qcGVn/exact/webp/2000/1125" alt="Laundry Room"></div>
+
+    <!-- Controls -->
+    <div class="slideshow-controls">
+      <button class="slide-btn" id="prevBtn" aria-label="Previous">&larr;</button>
+      <span class="slide-counter"><span id="currentSlide">1</span> / <span id="totalSlides">22</span></span>
+      <button class="slide-btn" id="nextBtn" aria-label="Next">&rarr;</button>
+    </div>
+  </div>
+  <!-- Thumbnail strip -->
+  <div class="thumbnail-strip" id="thumbStrip">
+    <div class="thumbnail active" data-index="0"><img src="https://dlqxt4mfnxo6k.cloudfront.net/greatsouthernhomes.com/aHR0cHM6Ly9zMy5hbWF6b25hd3MuY29tL2J1aWxkZXJjbG91ZC8xNjAxY2E5OTE1NDVjN2FjMTJjMDI3NTdiNzFjYTMxZS5qcGVn/exact/webp/475/267" alt="Front Exterior"></div>
+    <div class="thumbnail" data-index="1"><img src="https://dlqxt4mfnxo6k.cloudfront.net/greatsouthernhomes.com/aHR0cHM6Ly9zMy5hbWF6b25hd3MuY29tL2J1aWxkZXJjbG91ZC9hYWZjZGE0MzI2OGNmODM1YzRiZmUwYWYzYTg2MTU4NS5qcGVn/exact/webp/475/267" alt="Exterior 2"></div>
+    <div class="thumbnail" data-index="2"><img src="https://dlqxt4mfnxo6k.cloudfront.net/greatsouthernhomes.com/aHR0cHM6Ly9zMy5hbWF6b25hd3MuY29tL2J1aWxkZXJjbG91ZC9hN2Y4OTZmNTA0M2EwNmIxZGMxNThlMGUyMjJiMTk1ZS5qcGVn/exact/webp/475/267" alt="Exterior 3"></div>
+    <div class="thumbnail" data-index="3"><img src="https://dlqxt4mfnxo6k.cloudfront.net/greatsouthernhomes.com/aHR0cHM6Ly9zMy5hbWF6b25hd3MuY29tL2J1aWxkZXJjbG91ZC83ZTAwN2QyZDUxYTg2ODVjOWRlZjNhMGI1YmNmOWExMC5qcGVn/exact/webp/475/267" alt="Entrance"></div>
+    <div class="thumbnail" data-index="4"><img src="https://dlqxt4mfnxo6k.cloudfront.net/greatsouthernhomes.com/aHR0cHM6Ly9zMy5hbWF6b25hd3MuY29tL2J1aWxkZXJjbG91ZC85Yjc3NGIzMDY3M2YyMTAyMDg0OTkxYjM1ZDE5ODgyYi5qcGVn/exact/webp/475/267" alt="Kitchen"></div>
+    <div class="thumbnail" data-index="5"><img src="https://dlqxt4mfnxo6k.cloudfront.net/greatsouthernhomes.com/aHR0cHM6Ly9zMy5hbWF6b25hd3MuY29tL2J1aWxkZXJjbG91ZC9hZWVkOTMwMzgwZDdmYjJkYTI4NjNiMTQwYmI3NmRjOS5qcGVn/exact/webp/475/267" alt="Kitchen 2"></div>
+    <div class="thumbnail" data-index="6"><img src="https://dlqxt4mfnxo6k.cloudfront.net/greatsouthernhomes.com/aHR0cHM6Ly9zMy5hbWF6b25hd3MuY29tL2J1aWxkZXJjbG91ZC9mMjFmYjA4MjE1ZjBiNjA2MTEwNWJhZWJmM2UyNmM5NC5qcGVn/exact/webp/475/267" alt="Kitchen 3"></div>
+    <div class="thumbnail" data-index="7"><img src="https://dlqxt4mfnxo6k.cloudfront.net/greatsouthernhomes.com/aHR0cHM6Ly9zMy5hbWF6b25hd3MuY29tL2J1aWxkZXJjbG91ZC9lN2U1YzYxYzBlMjI1NDdmNzM3MDM1N2U2MDA3NzliOS5qcGVn/exact/webp/475/267" alt="Great Room"></div>
+    <div class="thumbnail" data-index="8"><img src="https://dlqxt4mfnxo6k.cloudfront.net/greatsouthernhomes.com/aHR0cHM6Ly9zMy5hbWF6b25hd3MuY29tL2J1aWxkZXJjbG91ZC80ZDY4MzdiYjdkNTE5NDJmNjljNTI4OTk2YzU1Yzc3Ny5qcGVn/exact/webp/475/267" alt="Great Room 2"></div>
+    <div class="thumbnail" data-index="9"><img src="https://dlqxt4mfnxo6k.cloudfront.net/greatsouthernhomes.com/aHR0cHM6Ly9zMy5hbWF6b25hd3MuY29tL2J1aWxkZXJjbG91ZC81YTdkNGRiNDA2OTRhYzdmMDVkZjJiNmY0MmMzOTZmMi5qcGVn/exact/webp/475/267" alt="Kitchen 4"></div>
+    <div class="thumbnail" data-index="10"><img src="https://dlqxt4mfnxo6k.cloudfront.net/greatsouthernhomes.com/aHR0cHM6Ly9zMy5hbWF6b25hd3MuY29tL2J1aWxkZXJjbG91ZC80Y2NiOWQ3OThmYzVlMDE4MTU2MGFlYWQ0ZTk2MzhlOS5qcGVn/exact/webp/475/267" alt="Primary Suite"></div>
+    <div class="thumbnail" data-index="11"><img src="https://dlqxt4mfnxo6k.cloudfront.net/greatsouthernhomes.com/aHR0cHM6Ly9zMy5hbWF6b25hd3MuY29tL2J1aWxkZXJjbG91ZC9hOWJjZjY1N2ViM2QyZDM1MzY4NGRlODM0YjIyOWUyMS5qcGVn/exact/webp/475/267" alt="Primary Suite 2"></div>
+    <div class="thumbnail" data-index="12"><img src="https://dlqxt4mfnxo6k.cloudfront.net/greatsouthernhomes.com/aHR0cHM6Ly9zMy5hbWF6b25hd3MuY29tL2J1aWxkZXJjbG91ZC9mYjQ3NjdiNTAxNjJkZDAzZGVkNzk1ZWM2OGE3NjhjZC5qcGVn/exact/webp/475/267" alt="Primary Bath"></div>
+    <div class="thumbnail" data-index="13"><img src="https://dlqxt4mfnxo6k.cloudfront.net/greatsouthernhomes.com/aHR0cHM6Ly9zMy5hbWF6b25hd3MuY29tL2J1aWxkZXJjbG91ZC9iMGFiMmJlNjNlMmExMDI1NDU3YzQ0ODM3NjZhZmViMi5qcGVn/exact/webp/475/267" alt="Primary Bath 2"></div>
+    <div class="thumbnail" data-index="14"><img src="https://dlqxt4mfnxo6k.cloudfront.net/greatsouthernhomes.com/aHR0cHM6Ly9zMy5hbWF6b25hd3MuY29tL2J1aWxkZXJjbG91ZC85ZDQyMzRmYzEzNmU0N2RhNmE2NGQzY2MxMWZmMDg0MC5qcGVn/exact/webp/475/267" alt="Closet"></div>
+    <div class="thumbnail" data-index="15"><img src="https://dlqxt4mfnxo6k.cloudfront.net/greatsouthernhomes.com/aHR0cHM6Ly9zMy5hbWF6b25hd3MuY29tL2J1aWxkZXJjbG91ZC84YjZhYjM1OTZhMmNlNTZmMjA5M2RhMGFlNDg5ZjkzMS5qcGVn/exact/webp/475/267" alt="Bedroom 2"></div>
+    <div class="thumbnail" data-index="16"><img src="https://dlqxt4mfnxo6k.cloudfront.net/greatsouthernhomes.com/aHR0cHM6Ly9zMy5hbWF6b25hd3MuY29tL2J1aWxkZXJjbG91ZC85NDIxODYzOTA0NDU5YjVlOWIzMDA4MTc2ZDhmNmQ4Yy5qcGVn/exact/webp/475/267" alt="Bath 2"></div>
+    <div class="thumbnail" data-index="17"><img src="https://dlqxt4mfnxo6k.cloudfront.net/greatsouthernhomes.com/aHR0cHM6Ly9zMy5hbWF6b25hd3MuY29tL2J1aWxkZXJjbG91ZC83NDA3MGRkNWE5ZWNkM2IwZjU2NDc4MDNkNGE5ZWQyNy5qcGVn/exact/webp/475/267" alt="Rear"></div>
+    <div class="thumbnail" data-index="18"><img src="https://dlqxt4mfnxo6k.cloudfront.net/greatsouthernhomes.com/aHR0cHM6Ly9zMy5hbWF6b25hd3MuY29tL2J1aWxkZXJjbG91ZC84NTM0MDQxM2MwMjg2YzVkY2UwYzk2MWJkMWNiNjkzZC5qcGVn/exact/webp/475/267" alt="Rear 2"></div>
+    <div class="thumbnail" data-index="19"><img src="https://dlqxt4mfnxo6k.cloudfront.net/greatsouthernhomes.com/aHR0cHM6Ly9zMy5hbWF6b25hd3MuY29tL2J1aWxkZXJjbG91ZC9jMTE4OTYzNDM1YzZkMzAyMGM0NGFkOWQ1MzA3Njg2Mi5qcGVn/exact/webp/475/267" alt="Rear 3"></div>
+    <div class="thumbnail" data-index="20"><img src="https://dlqxt4mfnxo6k.cloudfront.net/greatsouthernhomes.com/aHR0cHM6Ly9zMy5hbWF6b25hd3MuY29tL2J1aWxkZXJjbG91ZC82OTFmOTQ2NTM0ZjcxNjQyOGM3YTk0ZmI3MmEwMGNmNC5qcGVn/exact/webp/475/267" alt="Mudroom"></div>
+    <div class="thumbnail" data-index="21"><img src="https://dlqxt4mfnxo6k.cloudfront.net/greatsouthernhomes.com/aHR0cHM6Ly9zMy5hbWF6b25hd3MuY29tL2J1aWxkZXJjbG91ZC85MmM4ZjlmZDkxYTc5YWE3YzY0NGU1MGM1N2U4ZDFlNS5qcGVn/exact/webp/475/267" alt="Laundry"></div>
+  </div>
+</section>
+
+<!-- ── Intro / About the Property ── -->
+<section class="intro" id="property">
+  <div class="container">
+    <div class="intro-grid">
+      <div class="intro-image">
+        <img src="https://api.cotality.com/trestle/Media/Property/PHOTO-Jpeg/1152503198/1/MzEzOS84OTI4LzIw/MjAvMTc0NjgvMTc3MDM5ODk5Nw/YxmB_7mVAL59zd0OynQRKQ4CflJ_yQgzN66xdXYauHY" alt="3133 Tiger Tail Road — MLS Photo">
+      </div>
+      <div class="intro-text">
+        <p class="section-label">The Property</p>
+        <h2 class="section-title">Charleston-Inspired<br>Charm</h2>
+        <div class="divider"></div>
+        <p>Welcome to 3133 Tiger Tail Road — a beautifully crafted new construction home in the exclusive White Oak Estates community. With just 16 homes in this boutique neighborhood, you will enjoy the perfect balance of privacy, convenience, and low-maintenance living within Conway city limits.</p>
+        <p>This single-story Glendale II A floor plan delivers 1,173 square feet of thoughtfully designed living space featuring designer finishes, an open-concept layout, and Charleston-inspired curb appeal with unique pastel exteriors that set White Oak Estates apart.</p>
+        <p>Located minutes from downtown Conway's historic Riverwalk, restaurants, shopping, and healthcare — with quick access to Highway 501 and all the attractions of Myrtle Beach just 15 miles away.</p>
+        <div class="credentials">
+          <span>MLS# 2427023</span>
+          <span>New Construction</span>
+          <span>Great Southern Homes</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Property Features ── -->
+<section class="features-section" id="features">
+  <div class="container">
+    <div class="features-header">
+      <p class="section-label">Interior Details</p>
+      <h2 class="section-title">Designed for<br>Modern Living</h2>
+      <div class="divider divider-center"></div>
+      <p>Every detail of the Glendale II A has been thoughtfully selected — from the designer kitchen to the luxurious owner's suite — creating a home that is as beautiful as it is functional.</p>
+    </div>
+  </div>
+
+  <!-- Feature 1: Kitchen -->
+  <div class="feature-card">
+    <div class="feature-image">
+      <img src="https://dlqxt4mfnxo6k.cloudfront.net/greatsouthernhomes.com/aHR0cHM6Ly9zMy5hbWF6b25hd3MuY29tL2J1aWxkZXJjbG91ZC85Yjc3NGIzMDY3M2YyMTAyMDg0OTkxYjM1ZDE5ODgyYi5qcGVn/exact/webp/2000/1125" alt="Gourmet Kitchen">
+    </div>
+    <div class="feature-content">
+      <p class="feature-type">Heart of the Home</p>
+      <h3 class="feature-name">Gourmet Kitchen</h3>
+      <div class="divider"></div>
+      <p>The kitchen is the centerpiece of this home, featuring crisp white cabinetry paired with quartz countertops and an oversized island with elegant pendant lighting — perfect for entertaining or everyday living.</p>
+      <p>Energy Star stainless steel appliances come standard, including a dishwasher, microwave, and smooth-top electric range, ensuring both style and efficiency in every meal you prepare.</p>
+      <div class="feature-details">
+        <div class="detail-item">
+          <div class="detail-label">Countertops</div>
+          <div class="detail-value">Quartz</div>
+        </div>
+        <div class="detail-item">
+          <div class="detail-label">Cabinetry</div>
+          <div class="detail-value">White Shaker</div>
+        </div>
+        <div class="detail-item">
+          <div class="detail-label">Appliances</div>
+          <div class="detail-value">Energy Star SS</div>
+        </div>
+        <div class="detail-item">
+          <div class="detail-label">Island</div>
+          <div class="detail-value">Oversized w/ Pendants</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Feature 2: Owner's Suite -->
+  <div class="feature-card">
+    <div class="feature-image">
+      <img src="https://dlqxt4mfnxo6k.cloudfront.net/greatsouthernhomes.com/aHR0cHM6Ly9zMy5hbWF6b25hd3MuY29tL2J1aWxkZXJjbG91ZC80Y2NiOWQ3OThmYzVlMDE4MTU2MGFlYWQ0ZTk2MzhlOS5qcGVn/exact/webp/2000/1125" alt="Owner's Suite">
+    </div>
+    <div class="feature-content">
+      <p class="feature-type">Private Retreat</p>
+      <h3 class="feature-name">Owner's Suite</h3>
+      <div class="divider"></div>
+      <p>The primary suite is a serene retreat designed for relaxation, featuring a spacious layout with a large walk-in closet that offers ample storage for any wardrobe.</p>
+      <p>The en-suite bathroom elevates the everyday with a beautifully tiled walk-in shower with glass doors, dual vanity sinks, and a comfort-height elongated toilet — spa-inspired finishes that make every morning feel effortless.</p>
+      <div class="feature-details">
+        <div class="detail-item">
+          <div class="detail-label">Shower</div>
+          <div class="detail-value">Tile Walk-In</div>
+        </div>
+        <div class="detail-item">
+          <div class="detail-label">Vanity</div>
+          <div class="detail-value">Dual Sinks</div>
+        </div>
+        <div class="detail-item">
+          <div class="detail-label">Closet</div>
+          <div class="detail-value">Large Walk-In</div>
+        </div>
+        <div class="detail-item">
+          <div class="detail-label">Shower Doors</div>
+          <div class="detail-value">Glass Enclosure</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Feature 3: Great Room & Finishes -->
+  <div class="feature-card">
+    <div class="feature-image">
+      <img src="https://dlqxt4mfnxo6k.cloudfront.net/greatsouthernhomes.com/aHR0cHM6Ly9zMy5hbWF6b25hd3MuY29tL2J1aWxkZXJjbG91ZC9lN2U1YzYxYzBlMjI1NDdmNzM3MDM1N2U2MDA3NzliOS5qcGVn/exact/webp/2000/1125" alt="Great Room &amp; Designer Finishes">
+    </div>
+    <div class="feature-content">
+      <p class="feature-type">Quality Throughout</p>
+      <h3 class="feature-name">Designer Finishes</h3>
+      <div class="divider"></div>
+      <p>Luxury vinyl plank flooring flows throughout the main living areas, providing both beauty and durability. The dining area features elegant wainscoting that adds a touch of classic sophistication to every gathering.</p>
+      <p>Energy-efficient Low-E tilt-out windows fill the home with natural light while keeping utility costs low. All secondary bedrooms come pre-wired for ceiling fans, and luxury vinyl extends into all wet areas for easy maintenance.</p>
+      <div class="feature-details">
+        <div class="detail-item">
+          <div class="detail-label">Flooring</div>
+          <div class="detail-value">Luxury Vinyl Plank</div>
+        </div>
+        <div class="detail-item">
+          <div class="detail-label">Windows</div>
+          <div class="detail-value">Low-E Tilt-Out</div>
+        </div>
+        <div class="detail-item">
+          <div class="detail-label">Dining</div>
+          <div class="detail-value">Wainscoting</div>
+        </div>
+        <div class="detail-item">
+          <div class="detail-label">Bedrooms</div>
+          <div class="detail-value">Fan Pre-Wired</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Feature 4: Outdoor & Patio -->
+  <div class="feature-card">
+    <div class="feature-image">
+      <img src="https://dlqxt4mfnxo6k.cloudfront.net/greatsouthernhomes.com/aHR0cHM6Ly9zMy5hbWF6b25hd3MuY29tL2J1aWxkZXJjbG91ZC81Mzk0NTc3ZmM2YTk5ODBkYTFmZDUwMDMzYzA4NzMzYS5qcGVn/exact/webp/2000/1125" alt="Patio &amp; Outdoor Living">
+    </div>
+    <div class="feature-content">
+      <p class="feature-type">Easy Single-Story Living</p>
+      <h3 class="feature-name">Outdoor &amp; Garage</h3>
+      <div class="divider"></div>
+      <p>Step out onto the charming front porch or relax on the rear patio — both designed for enjoying the mild South Carolina climate. The single-story layout means everything you need is on one convenient level.</p>
+      <p>A single-car garage with remote opener provides secure covered parking and extra storage, while the low-maintenance yard means more time enjoying life and less time on upkeep. A spacious laundry room rounds out the practical amenities.</p>
+      <div class="feature-details">
+        <div class="detail-item">
+          <div class="detail-label">Front</div>
+          <div class="detail-value">Covered Porch</div>
+        </div>
+        <div class="detail-item">
+          <div class="detail-label">Rear</div>
+          <div class="detail-value">Private Patio</div>
+        </div>
+        <div class="detail-item">
+          <div class="detail-label">Garage</div>
+          <div class="detail-value">1-Car w/ Remote</div>
+        </div>
+        <div class="detail-item">
+          <div class="detail-label">Yard</div>
+          <div class="detail-value">Low Maintenance</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Stats ── -->
+<section class="stats">
+  <div class="container">
+    <div class="stats-grid">
+      <div>
+        <div class="stat-number">16</div>
+        <div class="stat-label">Home Community</div>
+      </div>
+      <div>
+        <div class="stat-number">15 mi</div>
+        <div class="stat-label">To Myrtle Beach</div>
+      </div>
+      
+      <div>
+        <div class="stat-number">#1</div>
+        <div class="stat-label">Team in South Carolina</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Discover Conway ── -->
+<section class="conway-section" id="conway">
+  <div class="container">
+    <div class="conway-header">
+      <p class="section-label">Discover Conway, SC</p>
+      <h2 class="section-title">South Carolina's<br>Hidden Gem</h2>
+      <div class="divider divider-center"></div>
+      <p>One of the oldest towns in South Carolina, Conway blends historic rivertown charm with modern convenience — just 15 miles from the Grand Strand.</p>
+    </div>
+  </div>
+
+  <!-- Conway 1: Outdoor & Nature -->
+  <div class="conway-card">
+    <div class="conway-image">
+      <img src="https://lh3.googleusercontent.com/gps-cs-s/APNQkAFzSXuAwtmF3Mpfo0FxCS7i7eO394B7SBCX31J1R_tTn_NFX26Y-b113leBz2-KelZbmIm3pSbLElyUIv1xKU7OHb8CY6_axTOi5KinLsVLvtfQlt-aOPMiMSpfVzoGdIVdn1uj=s680-w680-h510" alt="Scenic river boardwalk and nature">
+    </div>
+    <div class="conway-content">
+      <p class="conway-type">Outdoor &amp; Nature</p>
+      <h3 class="conway-name">The Waccamaw Riverwalk</h3>
+      <div class="divider"></div>
+      <p>Conway's crown jewel is its scenic Riverwalk along the black waters of the Waccamaw River, featuring historic markers, public artwork, a marina, and a public park. It is the heartbeat of the community and the perfect place for a morning stroll or sunset gathering.</p>
+      <p>For adventure seekers, Black River Outdoors offers guided kayaking tours on the Waccamaw, where paddlers explore the area's stunning natural beauty while learning about the river's rich ecosystem from experienced local guides.</p>
+      <div class="conway-details">
+        <div class="detail-item">
+          <div class="detail-label">Highlight</div>
+          <div class="detail-value">Waccamaw Riverwalk</div>
+        </div>
+        <div class="detail-item">
+          <div class="detail-label">Activities</div>
+          <div class="detail-value">Kayaking &amp; Paddling</div>
+        </div>
+        <div class="detail-item">
+          <div class="detail-label">Parks</div>
+          <div class="detail-value">Riverfront &amp; Sherwood</div>
+        </div>
+        <div class="detail-item">
+          <div class="detail-label">Family Fun</div>
+          <div class="detail-value">Splash Pad &amp; Trails</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Conway 2: History & Culture -->
+  <div class="conway-card">
+    <div class="conway-image">
+      <img src="https://scpictureproject.org/wp-content/uploads/conway.jpg" alt="Historic southern downtown">
+    </div>
+    <div class="conway-content">
+      <p class="conway-type">History &amp; Culture</p>
+      <h3 class="conway-name">250+ Years of Heritage</h3>
+      <div class="divider"></div>
+      <p>Conway's walkable downtown is a treasure trove of Southern history and creativity. The Horry County Museum preserves the region's rich heritage from Native American artifacts through the Textile Era, while the L.W. Paul Living History Farm lets visitors experience daily life on an early South Carolina homestead.</p>
+      <p>The arts scene thrives with Conway Glass — an artisan studio where visitors watch skilled glassblowers at work — and the Theatre of the Republic, hosting Broadway-style musicals and community productions in the heart of downtown.</p>
+      <div class="conway-details">
+        <div class="detail-item">
+          <div class="detail-label">Museums</div>
+          <div class="detail-value">Horry County Museum</div>
+        </div>
+        <div class="detail-item">
+          <div class="detail-label">Theater</div>
+          <div class="detail-value">Theatre of the Republic</div>
+        </div>
+        <div class="detail-item">
+          <div class="detail-label">Arts</div>
+          <div class="detail-value">Conway Glass Studio</div>
+        </div>
+        <div class="detail-item">
+          <div class="detail-label">Experience</div>
+          <div class="detail-value">L.W. Paul Living History</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Conway 3: Dining & Shopping -->
+  <div class="conway-card">
+    <div class="conway-image">
+      <img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=1200&h=800&fit=crop" alt="Restaurant dining atmosphere">
+    </div>
+    <div class="conway-content">
+      <p class="conway-type">Food &amp; Retail</p>
+      <h3 class="conway-name">Dining &amp; Shopping</h3>
+      <div class="divider"></div>
+      <p>Conway's dining scene punches well above its weight, from the upscale Lowcountry cuisine at Rivertown Bistro to the laid-back river views at Bonfire Taqueria, founded by well-known local restaurateur Darren Smith. Whitaker's and Hop N' Wich round out the culinary landscape with creative, locally-driven menus.</p>
+      <p>Shopping downtown means browsing the Black Water Market, exploring unique boutiques and galleries, and discovering one-of-a-kind finds in a charming, walkable setting that feels worlds away from the chain stores of the beach.</p>
+      <div class="conway-details">
+        <div class="detail-item">
+          <div class="detail-label">Fine Dining</div>
+          <div class="detail-value">Rivertown Bistro</div>
+        </div>
+        <div class="detail-item">
+          <div class="detail-label">Casual</div>
+          <div class="detail-value">Bonfire Taqueria</div>
+        </div>
+        <div class="detail-item">
+          <div class="detail-label">Market</div>
+          <div class="detail-value">Black Water Market</div>
+        </div>
+        <div class="detail-item">
+          <div class="detail-label">Shopping</div>
+          <div class="detail-value">Downtown Boutiques</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Conway 4: Education & Family -->
+  <div class="conway-card">
+    <div class="conway-image">
+      <img src="https://images.unsplash.com/photo-1562774053-701939374585?w=1200&h=800&fit=crop" alt="University campus">
+    </div>
+    <div class="conway-content">
+      <p class="conway-type">Education &amp; Community</p>
+      <h3 class="conway-name">A Place to Call Home</h3>
+      <div class="divider"></div>
+      <p>Conway is widely regarded as a safe, welcoming community ideal for raising a family. Strong local schools provide quality education from elementary through high school, and the area is home to Coastal Carolina University — bringing collegiate energy, events, and Division I athletics to the community.</p>
+      <p>Horry Georgetown Technical College offers additional higher-education opportunities, while year-round community events, festivals, and a tight-knit neighborhood atmosphere make Conway the kind of place where people put down roots and stay.</p>
+      <div class="conway-details">
+        <div class="detail-item">
+          <div class="detail-label">University</div>
+          <div class="detail-value">Coastal Carolina</div>
+        </div>
+        <div class="detail-item">
+          <div class="detail-label">College</div>
+          <div class="detail-value">Horry Georgetown Tech</div>
+        </div>
+        <div class="detail-item">
+          <div class="detail-label">Schools</div>
+          <div class="detail-value">Highly Rated K&ndash;12</div>
+        </div>
+        <div class="detail-item">
+          <div class="detail-label">Community</div>
+          <div class="detail-value">Family-Friendly Events</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Testimonial ── -->
+<section class="testimonial">
+  <div class="container">
+    <p class="section-label">Our Philosophy</p>
+    <div class="divider divider-center" style="margin-bottom:3rem"></div>
+    <blockquote>"Why just hire an agent when you can have an entire team working for you? We deliver an unmatched real estate experience — with precision, dedication, and results that have made us the #1 ranked team in South Carolina."</blockquote>
+    <cite>— Sollecito Advantage Group</cite>
+  </div>
+</section>
+
+<!-- ── Contact ── -->
+<section class="contact" id="contact">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="contact-info">
+        <p class="section-label">Get in Touch</p>
+        <h2 class="section-title">Schedule Your<br>Private Tour</h2>
+        <div class="divider"></div>
+        <p>With 13 licensed agents and a dedicated marketing expert, the Sollecito Advantage Group has been ranked #1 in South Carolina by Coldwell Banker for total properties sold and in the top 1% of all Coldwell Banker agents worldwide from 2017 to 2024. When you work with us, you get an entire team committed to your success.</p>
+        <div class="contact-detail">
+          <div class="contact-label">Team</div>
+          <div class="contact-value">Sollecito Advantage Group</div>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-label">Brokerage</div>
+          <div class="contact-value">Coldwell Banker Sea Coast Advantage</div>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-label">Office</div>
+          <div class="contact-value">9270 Frontage Rd, Murrells Inlet, SC</div>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-label">Website</div>
+          <div class="contact-value"><a href="https://www.mbadvantagegroup.com" target="_blank">mbadvantagegroup.com</a></div>
+        </div>
+      </div>
+      <div class="contact-form-wrap">
+        <div class="contact-form" style="display: flex; align-items: center; justify-content: center; height: 100%;">
+          <a href="https://www.mbadvantagegroup.com/contactus/" target="_blank" style="padding: 0.9rem 3rem; border: 1px solid var(--gold); background: transparent; color: var(--gold); font-family: var(--sans); font-size: 0.68rem; letter-spacing: 0.25em; text-transform: uppercase; text-decoration: none; transition: all 0.3s; font-weight: 500; display: inline-block;">Send Inquiry</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Footer ── -->
+<footer>
+  <div class="container">
+    <div class="footer-brand">Sollecito Advantage Group</div>
+    <div class="footer-brokerage">Coldwell Banker Sea Coast Advantage</div>
+    <p class="footer-legal">
+      &copy; 2026 Sollecito Advantage Group. All rights reserved. Coldwell Banker Sea Coast Advantage fully supports the principles of the Fair Housing Act. Each office is independently owned and operated. Information deemed reliable but not guaranteed. MLS# 2427023. Equal Housing Opportunity.
+    </p>
+    <div class="footer-website">
+      <a href="https://www.mbadvantagegroup.com" target="_blank">www.mbadvantagegroup.com</a>
+    </div>
+    
+</footer>
+
+<!-- ── Slideshow JavaScript ── -->
+<script>
+(function() {
+  const slides = document.querySelectorAll('.slide');
+  const thumbs = document.querySelectorAll('.thumbnail');
+  const prevBtn = document.getElementById('prevBtn');
+  const nextBtn = document.getElementById('nextBtn');
+  const currentEl = document.getElementById('currentSlide');
+  const totalEl = document.getElementById('totalSlides');
+  let current = 0;
+  let autoTimer;
+
+  totalEl.textContent = slides.length;
+
+  function goTo(index) {
+    slides[current].classList.remove('active');
+    thumbs[current].classList.remove('active');
+    current = (index + slides.length) % slides.length;
+    slides[current].classList.add('active');
+    thumbs[current].classList.add('active');
+    currentEl.textContent = current + 1;
+    // Scroll thumbnail into view within strip only (no page jump)
+    var strip = document.getElementById('thumbStrip');
+    var thumb = thumbs[current];
+    var scrollLeft = thumb.offsetLeft - strip.offsetWidth / 2 + thumb.offsetWidth / 2;
+    strip.scrollTo({ left: scrollLeft, behavior: 'smooth' });
+    resetAuto();
+  }
+
+  function next() { goTo(current + 1); }
+  function prev() { goTo(current - 1); }
+
+  function resetAuto() {
+    clearInterval(autoTimer);
+    autoTimer = setInterval(next, 5000);
+  }
+
+  prevBtn.addEventListener('click', prev);
+  nextBtn.addEventListener('click', next);
+
+  thumbs.forEach(function(thumb) {
+    thumb.addEventListener('click', function() {
+      goTo(parseInt(this.getAttribute('data-index')));
+    });
+  });
+
+  // Keyboard navigation
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'ArrowLeft') prev();
+    if (e.key === 'ArrowRight') next();
+  });
+
+  // Start auto-play
+  autoTimer = setInterval(next, 5000);
+})();
+</script>
+
+</body>
+</html>
